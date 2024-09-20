@@ -3,7 +3,7 @@ import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaSquareGithub } from "react-ico
 import { FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiStyledcomponents, SiPrisma, SiTypescript, SiShadcnui } from "react-icons/si";
+import { SiStyledcomponents, SiPrisma, SiTypescript, SiShadcnui, SiSequelize } from "react-icons/si";
 //
 import { ReactNode } from 'react';
 
@@ -34,6 +34,14 @@ export const abilitiesIcons: Ability[] = [
         image: <FaNodeJs className="size-20"/>
     },
     {
+        name: 'Prisma',
+        image: <SiPrisma className="size-20"/>
+    },
+    {
+        name: 'Sequelize',
+        image: <SiSequelize className="size-20"/>
+    },
+    {
         name: 'Tailwind',
         image: <RiTailwindCssFill className="size-20"/>
     },
@@ -44,10 +52,6 @@ export const abilitiesIcons: Ability[] = [
     {
         name: 'Shadcn/ui',
         image: <SiShadcnui className="size-16"/>
-    },
-    {
-        name: 'Prisma',
-        image: <SiPrisma className="size-20"/>
     },
     {
         name: 'Typescript',
