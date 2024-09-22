@@ -4,7 +4,7 @@ import { FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiStyledcomponents, SiPrisma, SiTypescript, SiShadcnui, SiSequelize } from "react-icons/si";
-//
+
 import { ReactNode } from 'react';
 
 interface Ability {

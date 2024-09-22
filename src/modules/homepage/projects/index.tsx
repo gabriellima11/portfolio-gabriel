@@ -19,8 +19,8 @@ export const Projects = () => {
                                         {project.icons}
                                     </div>
                                     <div className='space-x-4 space-y-4'>
-                                        <Button className='bg-black shadow-sm shadow-purple-800 dark:text-white transition ease-in duration-300 hover:scale-110'><a href={project.link} target='_blank'>Link</a></Button>
-                                        <Button className='bg-black shadow-sm shadow-purple-800  dark:text-white transition ease-in duration-300 hover:scale-110'><a href={project.gitHub} target='_blank'>GitHub</a></Button>
+                                        {project.link &&<Button className='bg-black shadow-sm shadow-purple-800 dark:text-white transition ease-in duration-300 hover:scale-110'><a href={project.link} target='_blank'>Link</a></Button>}
+                                        <Button className='bg-black shadow-sm mt-4 shadow-purple-800  dark:text-white transition ease-in duration-300 hover:scale-110'><a href={project.gitHub} target='_blank'>GitHub</a></Button>
                                     </div>
                                 </div>
 
