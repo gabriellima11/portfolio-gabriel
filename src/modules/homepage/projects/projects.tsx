@@ -74,7 +74,7 @@ const devBurger = {
         <SiPostgresql size={30} className='text-cyan-800' />
         <SiSequelize size={30} className='text-blue-600'/>
     </>,
-    link: "https://devburger-interface-black.vercel.app/login",
+    link: "",
     gitHub: "https://github.com/gabriellima11/devburger-interface"
 }
 
