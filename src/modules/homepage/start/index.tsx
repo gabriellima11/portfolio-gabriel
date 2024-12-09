@@ -15,7 +15,7 @@ export const Start = () => {
                     <h3 className="text-gray-500 font-normal text-xl md:text-center">Desenvolvedor Front-End</h3>
                     <div className='mt-4 flex gap-4 md:flex md:justify-center'>
                         <Link to='contact' spy={true} smooth={true} offset={-100} duration={500}><Button className="rounded-full mr-4 px-5 transition ease-in duration-300 hover:scale-110 dark:bg-purple-800 text-white">Contato</Button></Link>
-                        <Button className='w-1/3 rounded-full bg-transparent text-black dark:text-white border border-purple-800 hover:scale-110 transition ease-in duration-300'><a href={resume} download="CV Gabriel - Front-End">Baixar CV</a></Button>
+                        <Button className='w-1/3 rounded-full bg-transparent text-black dark:text-white border border-purple-800 hover:scale-110 transition ease-in duration-300'><a href={resume} download="CV Gabriel - FullStack">Baixar CV</a></Button>
                     </div>
 
                 </div>

@@ -3,7 +3,7 @@ import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaSquareGithub, FaDocker } from 
 import { FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiStyledcomponents, SiPrisma, SiTypescript, SiShadcnui, SiSequelize, SiMongodb, SiPostgresql } from "react-icons/si";
+import { SiStyledcomponents, SiPrisma, SiTypescript, SiShadcnui, SiSequelize, SiMongodb, SiPostgresql, SiSocketdotio } from "react-icons/si";
 
 import { ReactNode } from 'react';
 
@@ -62,6 +62,10 @@ export const abilitiesIcons: Ability[] = [
         image: <SiSequelize className="size-20"/>
     },
     {
+        name: 'WebSocket',
+        image: <SiSocketdotio className="size-20"/>
+    },
+    {
         name: 'Tailwind',
         image: <RiTailwindCssFill className="size-20"/>
     },
@@ -81,5 +85,6 @@ export const abilitiesIcons: Ability[] = [
         name: 'Git',
         image: <FaGitAlt className="size-20"/>
     },
+    
 
 ]

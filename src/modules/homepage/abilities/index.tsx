@@ -9,7 +9,7 @@ export const Abilities: React.FC = () => {
                 <div className="flex gap-14 flex-wrap justify-center w-2/3 md:grid md:grid-cols-2">
                     {
                         abilitiesIcons.map((ability, i) => (
-                            <div key={i} className="text-center cursor-pointer">
+                            <div key={i} className="text-center">
                                 <p className="text-2xl">{ability.name}</p>
                                 <div className="flex justify-center">
                                     {ability.image}

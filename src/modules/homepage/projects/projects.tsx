@@ -1,19 +1,13 @@
 //ICONS
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaDocker } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiStyledcomponents, SiPrisma, SiMongodb, SiPostgresql, SiSequelize } from "react-icons/si";
+import { SiStyledcomponents, SiPrisma, SiMongodb, SiPostgresql, SiSequelize, SiSocketdotio  } from "react-icons/si";
 
-//IMAGES
-import RickAndMortyImage from '../../../../public/projects/rick-and-morty-api.png'
-import CepImage from '../../../../public/projects/cep.png'
-import SnapClima from '../../../../public/projects/snapclima.png'
-import RegisterUser from '../../../../public/projects/register-user.png'
-import DevBurgerImage from '../../../../public/projects/devBurger.png'
-
+import images from '../../../assets/index.ts'
 
 const registerUsers = {
     name: "Registrar Usuários API",
-    image: RegisterUser,
+    image: images.RegisterUser,
     icons: <>
         <FaReact size={30} className='text-cyan-400' />
         <SiStyledcomponents size={30} className='text-pink-500' />
@@ -27,7 +21,7 @@ const registerUsers = {
 
 const rickAndMorty = {
     name: "Rick and Morty API Page",
-    image: RickAndMortyImage,
+    image: images.RickAndMortyImage,
     icons: <>
         <FaReact size={30} className='text-cyan-400' />
         <IoLogoJavascript size={30} className='text-yellow-400' />
@@ -39,7 +33,7 @@ const rickAndMorty = {
 
 const cep = {
     name: "Procura CEP",
-    image: CepImage,
+    image: images.CepImage,
     icons: <>
         <FaReact size={30} className='text-cyan-400' />
         <IoLogoJavascript size={30} className='text-yellow-400' />
@@ -51,7 +45,7 @@ const cep = {
 
 const snapClima = {
     name: "Snap Clima",
-    image: SnapClima,
+    image: images.SnapClima,
     icons: <>
         <FaHtml5 size={30} className='text-red-400' />
         <FaCss3Alt size={30} className='text-blue-500' />
@@ -63,7 +57,7 @@ const snapClima = {
 
 const devBurger = {
     name: "DevBurger",
-    image: DevBurgerImage,
+    image: images.DevBurgerImage,
     icons: <>
         <FaReact size={30} className='text-cyan-400' />
         <SiStyledcomponents size={30} className='text-pink-500' />
@@ -78,4 +72,17 @@ const devBurger = {
     gitHub: "https://github.com/gabriellima11/devburger-interface"
 }
 
-export const ProjectList = [devBurger, registerUsers, rickAndMorty, cep, snapClima]
+const realTimeChat = {
+    name: "Real Time Chat",
+    image: images.RealTimeChat,
+    icons: <>
+        <FaReact size={30} className='text-cyan-400' />
+        <SiStyledcomponents size={30} className='text-pink-500' />
+        <FaNodeJs size={30} className='text-green-500'/>
+        <SiSocketdotio size={30} className='text-gray-700'/>
+    </>,
+    link: "",
+    gitHub: "https://github.com/gabriellima11/real-time-chat"
+}
+
+export const ProjectList = [devBurger, realTimeChat, registerUsers, snapClima, cep, rickAndMorty]
