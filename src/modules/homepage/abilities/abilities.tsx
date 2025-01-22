@@ -2,7 +2,7 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaSquareGithub, FaDocker } from "react-icons/fa6";
 import { FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiTailwindCssFill, RiNextjsFill  } from "react-icons/ri";
 import { SiStyledcomponents, SiPrisma, SiTypescript, SiShadcnui, SiSequelize, SiMongodb, SiPostgresql, SiSocketdotio } from "react-icons/si";
 
 import { ReactNode } from 'react';
@@ -30,8 +30,12 @@ export const abilitiesIcons: Ability[] = [
         image: <SiTypescript className="size-20"/>
     },
     {
-        name: 'React',
+        name: 'React.js',
         image: <FaReact className="size-20"/>
+    },
+    {
+        name: 'Next.js',
+        image: <RiNextjsFill className="size-20"/>
     },
     {
         name: 'Nodejs',
@@ -52,10 +56,6 @@ export const abilitiesIcons: Ability[] = [
     {
         name: 'Docker',
         image: <FaDocker className="size-20"/>
-    },
-    {
-        name: 'Prisma',
-        image: <SiPrisma className="size-20"/>
     },
     {
         name: 'Sequelize',
