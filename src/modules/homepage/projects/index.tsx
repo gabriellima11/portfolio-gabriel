@@ -6,7 +6,7 @@ export const Projects = () => {
     return (
         <section id='projects'>
             <hr className="mb-20" />
-            <div className="h-screen md:h-auto flex flex-col items-center">
+            <div className="min-h-screen py-4 md:h-auto flex flex-col items-center">
                 <h2 className="text-4xl font-medium">Projetos</h2>
                 <div className="grid grid-cols-2 md:grid-cols-1 justify-center gap-10 mt-8">
                     {

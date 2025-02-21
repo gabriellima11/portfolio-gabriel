@@ -1,6 +1,7 @@
 //ICONS
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaDocker } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io";
+import { RiTailwindCssFill, RiNextjsFill  } from "react-icons/ri";
 import { SiStyledcomponents, SiPrisma, SiMongodb, SiPostgresql, SiSequelize, SiSocketdotio  } from "react-icons/si";
 
 import images from '../../../assets/index.ts'
@@ -85,4 +86,15 @@ const realTimeChat = {
     gitHub: "https://github.com/gabriellima11/real-time-chat"
 }
 
-export const ProjectList = [devBurger, realTimeChat, registerUsers, snapClima, cep, rickAndMorty]
+const pomodoroApp = {
+    name: "Pomodoro App",
+    image: images.PomodoroApp,
+    icons: <>
+        <RiNextjsFill size={30} className='text-gray-400' />
+        <RiTailwindCssFill size={30} className='text-pink-500' />
+    </>,
+    link: "https://pomodoro-app-gfldev.vercel.app",
+    gitHub: "https://github.com/gabriellima11/pomodoro-app"
+}
+
+export const ProjectList = [devBurger, realTimeChat, registerUsers, pomodoroApp, snapClima, cep, rickAndMorty]
