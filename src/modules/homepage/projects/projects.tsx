@@ -97,4 +97,17 @@ const pomodoroApp = {
     gitHub: "https://github.com/gabriellima11/pomodoro-app"
 }
 
-export const ProjectList = [devBurger, realTimeChat, registerUsers, pomodoroApp, snapClima, cep, rickAndMorty]
+const TaskOps = {
+    name: "TaskOps",
+    image: images.TaskOps,
+    icons: <>
+        <FaReact size={30} className='text-cyan-400' />
+        <SiStyledcomponents size={30} className='text-pink-500' />
+        <FaNodeJs size={30} className='text-green-500'/>
+        <SiMongodb size={30} className='text-green-400' />
+    </>,
+    link: "",
+    gitHub: "https://github.com/gabriellima11/TaskOps-interface"
+}
+
+export const ProjectList = [devBurger, realTimeChat, TaskOps, registerUsers, pomodoroApp, snapClima, cep, rickAndMorty]
