@@ -5,6 +5,7 @@ import { AboutMe } from "./modules/homepage/about-me"
 import { Abilities } from "./modules/homepage/abilities"
 import { Projects } from "./modules/homepage/projects"
 import { Contact } from "./modules/homepage/contact"
+import { Experiences } from "./modules/homepage/experiences"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <AboutMe />
         <Abilities />
         <Projects />
+        <Experiences />
         <Contact />
       </>
   )
