@@ -6,13 +6,16 @@ export default {
 		"./src/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
+		container: {
+			center: true,
+			padding: '1.25rem',
+			screens: { '2xl': '1200px' },
+		},
 		extend: {
-			screens: {
-				'sm': { 'max': '640px' },     // Para telas até 640px
-				'md': { 'max': '768px' },     // Para telas até 768px
-				'lg': { 'max': '1024px' },    // Para telas até 1024px
-				'xl': { 'max': '1280px' },    // Para telas até 1280px
-				'2xl': { 'max': '1536px' },   // Para telas até 1536px  
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+				mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -20,16 +23,30 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			keyframes: {
-				updown: {
+				float: {
 					'0%, 100%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(-20px)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+				marquee: {
+					from: { transform: 'translateX(0)' },
+					to: { transform: 'translateX(-50%)' },
+				},
+				blink: {
+					'0%, 49%': { opacity: '1' },
+					'50%, 100%': { opacity: '0' },
+				},
+				'pulse-ring': {
+					'0%': { transform: 'scale(1)', opacity: '0.7' },
+					'100%': { transform: 'scale(2.4)', opacity: '0' },
 				},
 			},
 			animation: {
-				updown: 'updown 3s ease-in-out infinite',
+				float: 'float 5s ease-in-out infinite',
+				marquee: 'marquee 40s linear infinite',
+				blink: 'blink 1s step-end infinite',
+				'pulse-ring': 'pulse-ring 1.6s ease-out infinite',
 			},
 			colors: {
-				bgheader: '#0C0A09',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {
@@ -63,16 +80,8 @@ export default {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
-				chart: {
-					'1': 'hsl(var(--chart-1))',
-					'2': 'hsl(var(--chart-2))',
-					'3': 'hsl(var(--chart-3))',
-					'4': 'hsl(var(--chart-4))',
-					'5': 'hsl(var(--chart-5))'
-				}
 			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
 }
-
