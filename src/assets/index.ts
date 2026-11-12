@@ -6,6 +6,7 @@ import DevBurgerImage from "./projects/devBurger.png";
 import RealTimeChat from "./projects/real-time-chat.png";
 import PomodoroApp from "./projects/pomodoro-app.png";
 import TaskOps from "./projects/taskops.png";
+import InvestIQ from "./projects/invest-iq.png";
 
 const images = {
   RickAndMortyImage,
@@ -15,7 +16,8 @@ const images = {
   DevBurgerImage,
   RealTimeChat,
   PomodoroApp,
-  TaskOps
+  TaskOps,
+  InvestIQ,
 };
 
 export type ImageKeys = keyof typeof images;

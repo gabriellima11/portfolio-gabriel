@@ -15,6 +15,15 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+        name: "InvestIQ",
+        description: "Carteira de investimentos da B3: registre compras e vendas de ações, FIIs e ETFs e acompanhe patrimônio, preço médio e rentabilidade com cotações reais.",
+        category: "fullstack",
+        image: images.InvestIQ,
+        stack: ["next", "react", "typescript", "tailwind", "postgres", "drizzle", "vitest", "vercel"],
+        link: "https://invest-iq-gfl.vercel.app",
+        gitHub: "https://github.com/gabriellima11/investiq",
+    },
+    {
         name: "DevBurger",
         description: "Sistema de pedidos para hamburgueria: interface em React e API Node.js com PostgreSQL, MongoDB e Docker.",
         category: "fullstack",

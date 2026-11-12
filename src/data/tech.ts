@@ -4,6 +4,7 @@ import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import {
     SiJavascript, SiTypescript, SiJquery, SiShadcnui, SiSequelize, SiMongodb,
     SiPostgresql, SiSocketdotio, SiStyledcomponents, SiPrisma, SiExpress,
+    SiDrizzle, SiVitest, SiVercel,
 } from "react-icons/si";
 
 export type Tech = {
@@ -33,6 +34,9 @@ export const tech = {
     sequelize: { name: "Sequelize", icon: SiSequelize, color: "#52B0E7" },
     mongodb: { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
     postgres: { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+    drizzle: { name: "Drizzle ORM", icon: SiDrizzle, color: "#C5F74F" },
+    vitest: { name: "Vitest", icon: SiVitest, color: "#6E9F18" },
+    vercel: { name: "Vercel", icon: SiVercel },
     docker: { name: "Docker", icon: FaDocker, color: "#2496ED" },
     git: { name: "Git", icon: FaGitAlt, color: "#F05032" },
     github: { name: "GitHub", icon: FaGithub },
@@ -54,12 +58,12 @@ export const stackGroups: { title: string; command: string; items: TechKey[] }[]
     {
         title: "Banco de dados",
         command: "dados & ORMs",
-        items: ["postgres", "mongodb", "prisma", "sequelize"],
+        items: ["postgres", "mongodb", "prisma", "sequelize", "drizzle"],
     },
     {
         title: "Ferramentas",
         command: "workflow",
-        items: ["git", "github", "docker"],
+        items: ["git", "github", "docker", "vitest", "vercel"],
     },
 ];
 
